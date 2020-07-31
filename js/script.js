@@ -1,7 +1,4 @@
-$(document).ready(preloderFunction());
-    
-    
-    
+$(document).ready(preloderFunction());   
 function preloderFunction() {
   
     setTimeout(function() {            
@@ -18,8 +15,6 @@ function preloderFunction() {
         }
     }, 3000);
 }
-
-
 
 function afterLoad() {
     // After Load function body!
