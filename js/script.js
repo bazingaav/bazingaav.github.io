@@ -17,7 +17,34 @@ function preloderFunction() {
 }
 
 function afterLoad() {
+    $(function () {
+        "use strict";
+        $(window).scroll(function() {
+          var bannerHeight = $(".banner").height(); 
+          var scroll = $(window).scrollTop();
+      
+          if (scroll >= bannerHeight) {
+              $(".sidebar").addClass("fixed");
+          } else {
+              $(".sidebar").removeClass("fixed");
+          }
+        });
+      });
+    
     // After Load function body!
 }
 
+$(function () {
+    "use strict";
+    $(window).scroll(function() {
+      var bannerHeight = $(".banner").height(); 
+      var scroll = $(window).scrollTop();
+  
+      if (scroll >= bannerHeight) {
+          $(".sidebar").addClass("fixed");
+      } else {
+          $(".sidebar").removeClass("fixed");
+      }
+    });
+  });
 
