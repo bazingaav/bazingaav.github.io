@@ -246,7 +246,10 @@ h1{
   }
 }
 
+/*--------------Media Queries------------------*/
 
+/*----------------Pre-loader starts-----------------------*/
+/*Large devices*/
 @media (min-width: 992px) {
 	/* Prelaoder */
 	/* Spinner Loading */
@@ -261,7 +264,7 @@ h1{
 	}
 }
 
-/* Backward laptop size (laptop, tablet, cell phone) */
+/* Medium Devices */
 @media (min-width: 768px) and (max-width: 991px) {
 	/* Preloader */
 	/* Spinner Loading */	
@@ -276,6 +279,7 @@ h1{
 	}
 }
 
+/*Small Devices*/
 @media (max-width: 767px) {
 	/* Prelaoder */
 	/* Spinner Loading */
@@ -289,3 +293,4 @@ h1{
 	  font: bold 2em;
 	}
 }
+/*----------------Pre-loader ends-----------------------*/
