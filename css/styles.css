@@ -1,15 +1,14 @@
 *{
     box-sizing: border-box;
     font-family: 'Recursive', sans-serif;
+    color: antiquewhite;
   }
 
 body{
     background-color: #222629;
 }
-h1{
-    color: #86C232;
-}
-/* Load Settings */
+
+/* Start: Preloader */
 .no-scroll-y {
 	overflow-y: hidden;
 }
@@ -19,7 +18,6 @@ h1{
     padding: 0;
 }
 
-/* Preloader */
 .ctn-preloader {
 	-webkit-box-align: center;
 	align-items: center;
@@ -49,7 +47,7 @@ h1{
     animation: spinner 1s infinite linear;
 	border-radius: 50%;
     border: 3px solid #6B6E70;
-    border-top-color: #86C232; 
+    border-top-color: #F5D300; 
     height: 9em;
     margin: 0 auto 3.5em auto;
     width: 9em;
@@ -68,7 +66,7 @@ h1{
 .ctn-preloader .animation-preloader .txt-loading .letters-loading:before {
     -webkit-animation: letters-loading 4s infinite;
     animation: letters-loading 4s infinite;
-    color: #86C232;
+    color: #F5D300;
     content: attr(data-text-preloader);
     left: 0;
     opacity: 0;
@@ -245,11 +243,51 @@ h1{
             transform: rotateY(0deg);
   }
 }
+/*End: Preloader*/
+
+
+
+/** Start: HEADER **/
+#header-nav {
+  background-color: #222629;
+  border-radius: 0;
+  border: 0;
+}
+
+#logo-img {
+  background: url('../images/AV.png') no-repeat;
+  height: 96px;
+  width: 90px;
+  margin: 10px 15px 0 0;
+}
+
+
+  #nav-list {
+    margin-top: 10px;
+  }
+  #nav-list a {
+    font-weight: bold;
+    color: #F5D300;
+  }
+  #nav-list a:hover {
+    color: #FFFFCC;
+    font-size: 1.5em;
+  }
+
+  .navbar-header button.navbar-toggle, .navbar-header .icon-bar {
+    border: 1px solid #F5D300;
+  }
+  .navbar-header button.navbar-toggle {
+    clear: both;
+    margin-top: -65px;
+  }
+
+  /** HEADER ENDS**/
 
 /*--------------Media Queries------------------*/
 
 /*----------------Pre-loader starts-----------------------*/
-/*Large devices*/
+/*------------------Large devices----------------*/
 @media (min-width: 992px) {
 	/* Prelaoder */
 	/* Spinner Loading */
@@ -264,7 +302,7 @@ h1{
 	}
 }
 
-/* Medium Devices */
+/* -------------------Medium Devices----------------------- */
 @media (min-width: 768px) and (max-width: 991px) {
 	/* Preloader */
 	/* Spinner Loading */	
@@ -276,10 +314,11 @@ h1{
 	/* Text Loading */
 	.ctn-preloader .animation-preloader .txt-loading {
 	  font: bold 3.5em ;
-	}
+  }
+  
 }
 
-/*Small Devices*/
+/*---------------------Small Devices-------------*/
 @media (max-width: 767px) {
 	/* Prelaoder */
 	/* Spinner Loading */
@@ -291,6 +330,13 @@ h1{
 	/* Text Loading */
 	.ctn-preloader .animation-preloader .txt-loading {
 	  font: bold 2em;
-	}
+  }
+
+  #logo-img {
+    width: 90px;
+    height: 80px;
+    margin: 5px 5px 5px 5px;
+  }
 }
-/*----------------Pre-loader ends-----------------------*/
+
+
