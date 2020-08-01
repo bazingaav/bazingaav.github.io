@@ -13,35 +13,20 @@ function preloderFunction() {
                 afterLoad();
             });
         }
-    }, 3000);
+    }, 10);
 }
 
-function afterLoad() {
-    $(function () {
-        "use strict";
-        $(window).scroll(function() {
-          var bannerHeight = $(".banner").height(); 
-          var scroll = $(window).scrollTop();
-      
-          if (scroll >= bannerHeight) {
-              $(".sidebar").addClass("fixed");
-          } else {
-              $(".sidebar").removeClass("fixed");
-          }
-        });
-      });
-    
-    // After Load function body!
+function afterLoad() {   
 }
 
 $(function () {
     "use strict";
     $(window).scroll(function() {
-      var bannerHeight = $(".banner").height(); 
+      var bannerHeight = $(".name-page").height(); 
       var scroll = $(window).scrollTop();
-  
       if (scroll >= bannerHeight) {
           $(".sidebar").addClass("fixed");
+          $(".sidebar").removeClass("hidden");
       } else {
           $(".sidebar").removeClass("fixed");
       }
