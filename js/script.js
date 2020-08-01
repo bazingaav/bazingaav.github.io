@@ -33,3 +33,13 @@ $(function () {
     });
   });
 
+
+$(function () { 
+  $("#navbarToggle").blur(function (event) {
+    var screenWidth = window.innerWidth;
+    console.log(screenWidth)
+    if (screenWidth < 768) {
+      $("#collapsable-nav").collapse('hide');
+    }
+  });
+});
