@@ -13,7 +13,7 @@ function preloderFunction() {
                 afterLoad();
             });
         }
-    }, 10);
+    }, 3000);
 }
 
 function afterLoad() {   
