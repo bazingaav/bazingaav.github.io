@@ -395,7 +395,10 @@ body{
     clear: both;
   }            
   
-
+  #soc{ /*Temporarry - site under construction*/
+    max-width: 100%;
+    max-height: 100%;
+  }
   
 
 
